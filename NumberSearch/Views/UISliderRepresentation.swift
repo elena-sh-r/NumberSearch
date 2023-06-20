@@ -34,6 +34,7 @@ struct UISliderRepresentation: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.thumbTintColor = thumbTintColor.withAlphaComponent(CGFloat(alpha) / 100)
+        uiView.value = Float(value)
     }
     
     func makeCoordinator() -> Coordinator {
