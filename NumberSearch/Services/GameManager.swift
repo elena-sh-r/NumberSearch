@@ -13,5 +13,6 @@ final class GameManager: ObservableObject {
     
     func updateTargetValue() {
         numberGame.targetValue = Int.random(in: 0...100)
+        numberGame.currentValue = Double.random(in: 0...100.0)
     }
 }

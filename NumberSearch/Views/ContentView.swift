@@ -33,7 +33,6 @@ struct ContentView: View {
             
             Button("Начать заново") {
                 gameManager.updateTargetValue()
-                showingAlert = true
             }
         }
         .padding()
